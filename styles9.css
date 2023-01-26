@@ -178,9 +178,20 @@
     cursor: pointer;
   }
   .nft-img:active{
-    background-color: aqua;
+    background-color: hsl(178, 100%, 50%);
   }
 
+  .sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
   @media screen and (max-width:376px){
-    
+    .nft-img:hover{
+      background-color:hsl(178, 100%, 50%);
   }
